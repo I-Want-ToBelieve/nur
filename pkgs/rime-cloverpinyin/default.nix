@@ -26,8 +26,9 @@ stdenv.mkDerivation rec {
   installPhase = ''
      rm build/*.txt
      rm -rf opencc
-     install -Dm644 *.yaml -t $out/usr/share/rime-data/
-     install -Dm644 build/* -t $out/usr/share/rime-data/build/
+     mkdir -p $out/share/rime-data/build/
+     install -Dm644 *.yaml -t $out/share/rime-data/
+     install -Dm644 build/* -t $out/share/rime-data/build/
   '';
   meta = with lib; {
     description = "Clover Simplified pinyin input for rime";
