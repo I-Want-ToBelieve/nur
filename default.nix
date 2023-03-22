@@ -17,4 +17,5 @@
   rime-cloverpinyin = pkgs.callPackage ./pkgs/rime-cloverpinyin {};
   fcitx5-theme-catppuccin = pkgs.callPackage ./pkgs/fcitx5-theme-catppuccin {};
   krabby = pkgs.callPackage ./pkgs/krabby {};
+  autohide-tdrop = pkgs.callPackage ./pkgs/autohide-tdrop {};
 }
