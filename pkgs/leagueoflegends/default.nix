@@ -1,4 +1,4 @@
-{ stdenv, fetchFromGitHub }:
+{ stdenv, fetchFromGitHub, lib }:
 
 # @see https://aur.archlinux.org/cgit/aur.git/tree/PKGBUILD?h=leagueoflegends-git
 # @see https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/misc/tdrop/default.nix
