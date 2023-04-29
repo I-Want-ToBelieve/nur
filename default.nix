@@ -19,4 +19,6 @@
   krabby = pkgs.callPackage ./pkgs/krabby {};
   autohide-tdrop = pkgs.callPackage ./pkgs/autohide-tdrop {};
   ttf-ubuntu-mono-ligaturized = pkgs.callPackage ./pkgs/ttf-ubuntu-mono-ligaturized  {};
+  leagueoflegends = pkgs.callPackage ./pkgs/leagueoflegends  {};
+
 }
