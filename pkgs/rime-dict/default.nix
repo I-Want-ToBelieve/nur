@@ -7,13 +7,13 @@
 } @ args:
 stdenvNoCC.mkDerivation rec {
   pname = "rime-dict";
-  version = "da792878d2f2d3ce2d522822853c0adac84c9513";
+  version = "9f9f736911e5f569210a90c0cdcf5a4808fcd2c1";
   src = fetchFromGitHub ({
     owner = "I-Want-ToBelieve";
     repo = "rime-dict";
-    rev = "da792878d2f2d3ce2d522822853c0adac84c9513";
+    rev = "9f9f736911e5f569210a90c0cdcf5a4808fcd2c1";
     fetchSubmodules = false;
-    sha256 = "sha256-+3PdZQ9sAZ63AioA2/apwhsjz5pR3uKHWx0kz28i3fk=";
+    sha256 = "sha256-Y2nrqwRAD6gy2HZu6OPuKPOCu0YvQ5961lVJ+W0P5Dc=";
   });
   installPhase = ''
     mkdir -p $out/share/rime-data
