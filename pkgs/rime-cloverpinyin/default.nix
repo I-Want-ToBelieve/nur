@@ -21,14 +21,18 @@ stdenv.mkDerivation rec {
     unzip $src
   '';
   buildPhase = ''
-  rime_deployer --compile clover.schema.yaml .  ${rime-data}/share/rime-data
+    rime_deployer --compile clover.schema.yaml .  ${rime-data}/share/rime-data
   '';
   installPhase = ''
-     rm build/*.txt
-     rm -rf opencc
-     mkdir -p $out/share/rime-data/build/
-     install -Dm644 *.yaml -t $out/share/rime-data/
-     install -Dm644 build/* -t $out/share/rime-data/build/
+    runHook preInstall
+
+    rm build/*.txt
+    rm -rf opencc
+    mkdir -p $out/share/rime-data/build/
+    install -Dm644 *.yaml -t $out/share/rime-data/
+    install -Dm644 build/* -t $out/share/rime-data/build/
+
+    runHook postInstall
   '';
   meta = with lib; {
     description = "Clover Simplified pinyin input for rime";
