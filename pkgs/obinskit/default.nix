@@ -58,7 +58,7 @@ stdenv.mkDerivation rec {
   meta = with lib; {
     description = "Graphical configurator for Anne Pro and Anne Pro II keyboards";
     homepage = "https://www.hexcore.xyz/obinskit";
-    license = licenses.unfree;
+    license = licenses.gpl3Only;
     maintainers = with maintainers; [ shou ];
     platforms = [ "x86_64-linux" ];
   };
