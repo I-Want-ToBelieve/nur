@@ -21,4 +21,5 @@
   ttf-ubuntu-mono-ligaturized = pkgs.callPackage ./pkgs/ttf-ubuntu-mono-ligaturized  {};
   leagueoflegends = pkgs.callPackage ./pkgs/leagueoflegends  {};
   obinskit = pkgs.callPackage ./pkgs/obinskit {};
+  rime-dict = pkgs.callPackage ./pkgs/rime-dict {};
 }
