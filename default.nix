@@ -22,4 +22,5 @@
   leagueoflegends = pkgs.callPackage ./pkgs/leagueoflegends  {};
   obinskit = pkgs.callPackage ./pkgs/obinskit {};
   rime-dict = pkgs.callPackage ./pkgs/rime-dict {};
+  systemd-shutdown-diagnose = pkgs.callPackage ./pkgs/systemd-shutdown-diagnose {};
 }
