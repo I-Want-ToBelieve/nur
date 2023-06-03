@@ -16,10 +16,16 @@ stdenv.mkDerivation rec {
     sha256 = "sha256-l6o2hLCmkv/P98XBzwtB6boEciMGIlKWfVsYRId4WDM=";
   };
   installPhase = ''
-    install -Dm755 diagnose.shutdown "$out/usr/lib/systemd/system-shutdown/diagnose.shutdown"
-    install -Dm755 start-diagnose-shutdown "$out/usr/bin/start-diagnose-shutdown"
-    install -Dm755 analyze-shutdown "$out/usr/bin/analyze-shutdown"
-    install -Dm644 shutdown-diagnose.service "$out/usr/lib/systemd/system/shutdown-diagnose.service"
+    mkdir -p $out/bin
+    install -Dm755 diagnose.shutdown "$out/lib/systemd/system-shutdown/diagnose.shutdown"
+    install -Dm755 start-diagnose-shutdown "$out/bin/start-diagnose-shutdown"
+    install -Dm755 analyze-shutdown "$out/bin/analyze-shutdown"
+    install -Dm644 shutdown-diagnose.service "$out/lib/systemd/system/shutdown-diagnose.service"
+    substituteInPlace $out/lib/systemd/system/shutdown-diagnose.service \
+      --replace "/usr/bin/true" "$out/bin/true" \
+      --replace "/usr/bin/start-diagnose-shutdown" "$out/bin/start-diagnose-shutdown"
+
+
   '';
   meta = with lib; {
     description = "help to diagnose shutdown sequence for systemd";
