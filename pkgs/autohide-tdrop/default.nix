@@ -14,7 +14,7 @@ rustPlatform.buildRustPackage rec {
     owner = "I-Want-ToBelieve";
     repo = pname;
     rev = "main";
-    hash = "sha256-uRjNHbVDb3RGLDpuEp403AXtpcpDaHBxhdoqDPm2fHc=";
+    hash = "sha256-RnZz+DKTqTyD0hxvWcgoS0eAFbWHm2wj6tncLY8DkE8=";
   };
 
   cargoHash = "sha256-TcRV9tl/JKGEIvXOuMMCH663oZYkO+n5/GO4JwpWtoI=";
