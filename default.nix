@@ -18,9 +18,8 @@
   fcitx5-theme-catppuccin = pkgs.callPackage ./pkgs/fcitx5-theme-catppuccin {};
   krabby = pkgs.callPackage ./pkgs/krabby {};
   autohide-tdrop = pkgs.callPackage ./pkgs/autohide-tdrop {};
-  ttf-ubuntu-mono-ligaturized = pkgs.callPackage ./pkgs/ttf-ubuntu-mono-ligaturized  {};
-  leagueoflegends = pkgs.callPackage ./pkgs/leagueoflegends  {};
-  obinskit = pkgs.callPackage ./pkgs/obinskit {};
+  ttf-ubuntu-mono-ligaturized = pkgs.callPackage ./pkgs/ttf-ubuntu-mono-ligaturized {};
+  leagueoflegends = pkgs.callPackage ./pkgs/leagueoflegends {};
   rime-dict = pkgs.callPackage ./pkgs/rime-dict {};
   systemd-shutdown-diagnose = pkgs.callPackage ./pkgs/systemd-shutdown-diagnose {};
 }

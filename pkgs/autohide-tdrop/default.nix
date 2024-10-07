@@ -8,16 +8,16 @@
 # @see https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/rust.section.md#buildrustpackage-compiling-rust-applications-with-cargo-compiling-rust-applications-with-cargo
 rustPlatform.buildRustPackage rec {
   pname = "autohide-tdrop";
-  version = "1.0.2";
+  version = "1.1.4";
 
   src = fetchFromGitHub {
     owner = "I-Want-ToBelieve";
     repo = pname;
     rev = "main";
-    hash = "sha256-RnZz+DKTqTyD0hxvWcgoS0eAFbWHm2wj6tncLY8DkE8=";
+    hash = "sha256-JkCgvlN9uHltyc+GMHTo+VHZRwKpGMU6hwvL49tpd7U=";
   };
 
-  cargoHash = "sha256-TcRV9tl/JKGEIvXOuMMCH663oZYkO+n5/GO4JwpWtoI=";
+  cargoHash = "sha256-pF83PKfi6aVglg+XsU3cIyaf8JT6HBQlB0oVHJokvlM=";
 
   meta = with lib; {
     description = ''
