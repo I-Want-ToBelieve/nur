@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
     hash = "sha256-9MAoovF7YgnLROw8ldrgVxL+Q21GC5K15khSMDzQgac=";
   };
 
-  cargoHash = "sha256-R2hxYDxIqaw4a77WF0a2r1AbMIRQwSAMO1NTtA39dXQ=";
+  cargoHash = "sha256-jbmVsWnP7kyz/Ccc4jN/TqumCKQKy4kfQMDnRCy+rl0=";
 
   meta = with lib; {
     description = "Print pokemon sprites in your terminal";
